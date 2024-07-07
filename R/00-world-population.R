@@ -223,5 +223,5 @@ p <- df_plot %>%
     plot.subtitle = element_text(hjust = 0.5, margin = margin(t = 12, b = 40)),
     plot.margin = margin(t = 4, b = 4, l = 10, r = 10)
   )
-ggsave(file.path("plots", "world2.png"), width = 6, height = 5,
+ggsave(file.path("plots", "world.png"), width = 6, height = 5,
        scale = 1.5, dpi = 600)
