@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Population Flags</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Playfair+Display:wght@400;700&display=swap">
+	
+	    <style>
+	        body {
+	            font-family: 'Roboto', Arial, sans-serif;
+	        }
+			h1 {
+				font-family: 'Playfair Display', 'Times New Roman', serif;
+				text-align: center;
+			}
+			h3 {
+				font-weight: 600;
+			}
+	    </style>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+		<script type="module">
+		import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+		import define from "https://api.observablehq.com/@ansgar-wolsing/population-flags.js?v=4";
+		new Runtime().module(define, name => {
+		  if (name === "map") return new Inspector(document.querySelector("#observablehq-map-59247c07"));
+		});
+		</script>
+		
+</head>
+<body>
+	<h1>World Population</h1>
+	<p style="text-align: center">What if we displayed the countries as circle-shaped flags and sized them proportiontally by their population?</p>
+	<p style="text-align: center;font-style: italic">Zoom in with the mouse to make countries with small populations visible. Hover over a flag to see the exact population figure.</p>
+	<div id="observablehq-map-59247c07"></div>
+	<p>The cartogram is based on the Observable notebook <a href="https://observablehq.com/@ansgar-wolsing/population-flags">Population Flags by Ansgar Wolsing</a></p>
+
+	<h3>Sources</h3>
+	<ul>
+		<li>Country geometries: GISCO, Natural Earth.</li>
+		<li>Population: Worldbank (via {gt} R package)</li>
+		<li>Flags: https://github.com/HatScripts/circle-flags</li>
+</body>
+</html>
