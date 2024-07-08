@@ -22,7 +22,7 @@ countrycodes <- countrycodes[order(countrycodes)]
 flag_emojis <- sapply(countrycodes, country_to_flag)
 
 
-df_plot |> 
+df_observable <- df_plot |> 
   st_drop_geometry() |> 
   select(countrycode = FID, everything(), 
          -c(geometry, centroid, PANEL, group, 
@@ -37,5 +37,6 @@ df_plot |>
   mutate(
     population_fmt = scales::number(
       population, accuracy = 0.01,
-      scale_cut = c("K" = 1e3, "M" = 1e6, "B" = 1e9))) |> 
-  write_csv(file.path("data", "countries-dorling.csv"))
+      scale_cut = c("K" = 1e3, "M" = 1e6, "B" = 1e9)))
+
+write_csv(df_observable, file.path("data", "countries-dorling.csv"))
