@@ -56,7 +56,9 @@
             border-radius: 8px;
         }
 
-        #observablehq-europe-57b57266 {
+        #observablehq-europe-57b57266, 
+        #observablehq-asia-ad4a944d
+         {
             text-align: center;
             width: 90%;
             max-width: 1000px;
@@ -112,6 +114,7 @@
             if (name === "map") return new Inspector(document.querySelector("#observablehq-map-59247c07"));
             if (name === "africa") return new Inspector(document.querySelector("#observablehq-africa-7825ba79"));
             if (name === "europe") return new Inspector(document.querySelector("#observablehq-europe-57b57266"));
+            if (name === "asia") return new Inspector(document.querySelector("#observablehq-asia-ad4a944d"));
         });
     </script>
 </head>
@@ -126,6 +129,13 @@
     <p>Welcome to this unique visualisation of the world's population. In this Dorling cartogram, each country is represented by a circle, with the size of the circle corresponding to the population of that country. By using national flags as visual markers, this cartogram not only communicates population data, but also celebrates the diversity of nations around the globe.</p>
     <p>This approach allows us to see relative population sizes in a visually intuitive way, highlighting the demographic giants such as China and India, while also drawing attention to smaller but significant countries. The result is a map that balances geographic accuracy with an engaging and informative representation of global population distribution.</p>
     <p>Explore this map to gain insight into how populations are distributed across different regions and how each country compares to others.</p>
+
+    <h1>Asia</h1>
+    <hr />
+    <div class="container">
+        <div id="observablehq-asia-ad4a944d"></div>
+    </div>
+    
 
     <h1>Africa</h1>
     <hr />
