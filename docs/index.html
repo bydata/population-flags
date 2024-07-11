@@ -5,57 +5,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Population Flags</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Playfair+Display:wght@400;700&display=swap">
-	
-	    <style>
-	        body {
-	            font-family: 'Roboto', Arial, sans-serif;
-				padding-left: 5%;
-				padding-right: 5%;
-	        }
-			h1 {
-				font-family: 'Playfair Display', 'Times New Roman', serif;
-				font-size: 32pt;
-				text-align: center;
-			}
-			h3 {
-				font-weight: 600;
-			}
-			div#observablehq-map-59247c07 {
-			}
-			p {
-			}
-	    </style>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
-		<script type="module">
-		import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-		import define from "https://api.observablehq.com/@ansgar-wolsing/population-flags.js?v=4";
-		new Runtime().module(define, name => {
-		  if (name === "map") return new Inspector(document.querySelector("#observablehq-map-59247c07"));
-		});
-		</script>
-		
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Playfair+Display:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', 'Times New Roman', serif;
+            font-size: 32pt;
+            text-align: center;
+            margin: 20px 0 10px;
+        }
+
+        h3 {
+            font-weight: 600;
+        }
+
+        hr {
+            border: 0;
+            height: 2px;
+            background: #333;
+            width: 50%;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+            width: 100%;
+        }
+
+        #observablehq-map-59247c07 {
+            text-align: center;
+            width: 95%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        #observablehq-europe-57b57266, 
+        #observablehq-asia-ad4a944d
+         {
+            text-align: center;
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        #observablehq-africa-7825ba79 {
+            text-align: center;
+            width: 90%;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        #observablehq-americas-ddce2d77 {
+            text-align: center;
+            width: 90%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+
+        p {
+            line-height: 1.6;
+            text-align: justify;
+            margin: 10px 0;
+            padding: 0 10%;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .source-list {
+            text-align: left;
+            width: 70%;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        .source-list ul {
+            padding-left: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <script type="module">
+        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+        import define from "https://api.observablehq.com/@ansgar-wolsing/population-flags.js?v=4";
+        new Runtime().module(define, name => {
+            if (name === "map") return new Inspector(document.querySelector("#observablehq-map-59247c07"));
+            if (name === "africa") return new Inspector(document.querySelector("#observablehq-africa-7825ba79"));
+            if (name === "europe") return new Inspector(document.querySelector("#observablehq-europe-57b57266"));
+            if (name === "asia") return new Inspector(document.querySelector("#observablehq-asia-ad4a944d"));
+            if (name === "americas") return new Inspector(document.querySelector("#observablehq-americas-ddce2d77"));
+        });
+    </script>
 </head>
 <body>
-	<h1>World Population Flags</h1>
-	<p style="text-align: center">What if we displayed the countries as circle-shaped flags and sized them proportiontally by their population?</p>
-	<p style="text-align: center;font-style: italic">Zoom in with your mouse to see countries with small populations. Hover over a flag to see the exact number of inhabitants.</p>
-	<div id="observablehq-map-59247c07"></div>
-	<p>
-		Welcome to this unique visualisation of the world's population.In this Dorling cartogram, each country is represented 		by a circle, with the size of the circle corresponding to the population of that country. By using national flags as 		visual markers, this cartogram not only communicates population data, but also celebrates the diversity of nations 		around the globe.
-	</p>
-	<p>
-		This approach allows us to see relative population sizes in a visually intuitive way, highlighting the demographic 		giants such as China and India, while also drawing attention to smaller but significant countries. The result is a map 		that balances geographic accuracy with an engaging and informative representation of global population 		distribution.
-	</p>
-	<p>
-		Explore this map to gain insight into how populations are distributed across different regions and how each country 		compares to others.
-	</p>
-	<p>The cartogram is based on the Observable notebook <a href="https://observablehq.com/@ansgar-wolsing/population-flags">Population Flags by Ansgar Wolsing</a></p>
+    <h1>World Population Flags</h1>
+    <hr />
+    <p>What if we displayed the countries as circle-shaped flags and sized them proportionally by their population?</p>
+    <p class="italic">Zoom in with your mouse to see countries with small populations. Hover over a flag to see the exact number of inhabitants.</p>
+    <div class="container">
+        <div id="observablehq-map-59247c07"></div>
+    </div>
+    <p>Welcome to this unique visualisation of the world's population. In this Dorling cartogram, each country is represented by a circle, with the size of the circle corresponding to the population of that country. By using national flags as visual markers, this cartogram not only communicates population data, but also celebrates the diversity of nations around the globe.</p>
+    <p>This approach allows us to see relative population sizes in a visually intuitive way, highlighting the demographic giants such as China and India, while also drawing attention to smaller but significant countries. The result is a map that balances geographic accuracy with an engaging and informative representation of global population distribution.</p>
+    <p>Explore this map to gain insight into how populations are distributed across different regions and how each country compares to others.</p>
 
-	<h3>Sources</h3>
-	<ul>
-		<li>Country geometries: GISCO, Natural Earth.</li>
-		<li>Population: Worldbank (via {gt} R package)</li>
-		<li>Flags: https://github.com/HatScripts/circle-flags</li>
+    <h1>Asia</h1>
+    <hr />
+    <div class="container">
+        <div id="observablehq-asia-ad4a944d"></div>
+    </div>
+    
+
+    <h1>Africa</h1>
+    <hr />
+    <div class="container">
+        <div id="observablehq-africa-7825ba79"></div>
+    </div>
+    
+    <h1>Europe</h1>
+    <hr />
+    <div class="container">
+        <div id="observablehq-europe-57b57266"></div>
+    </div>
+
+    <h1>Americas</h1>
+    <hr />
+    <div class="container">
+        <div id="observablehq-americas-ddce2d77"></div>
+    </div>
+
+    
+    
+    <div class="source-list">
+        <p style="text-align: left; margin: 0; padding: 0">The cartograms are based on the Observable notebook <a href="https://observablehq.com/@ansgar-wolsing/population-flags">Population Flags by Ansgar Wolsing</a></p>
+        <h3>Sources</h3>
+        <ul>
+            <li>Country geometries: GISCO, Natural Earth.</li>
+            <li>Population: Worldbank (via {gt} R package)</li>
+            <li>Flags: <a href="https://github.com/HatScripts/circle-flags">HatScripts Circle Flags</a></li>
+        </ul>
+    </div>
 </body>
 </html>
