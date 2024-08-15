@@ -77,20 +77,18 @@ p {
 }
 
 #observablehq-map-59247c07 {
-    width: 85%;
+    width: 90%;
     height: 100%;
     max-width: 1600px;
 }
 
 #cr-map-world-zoomable {
-  margin: 0 auto;
-  width: 85%;
+  margin: -370px auto 20px auto;
+  width: 90%;
   border-color: #aaa;
   border-style: solid;
   border-width: thin;
   border-radius: 5px;
-  margin-top: -100px;
-  margin-bottom: 20px;
 }
 
 a {
@@ -99,6 +97,7 @@ a {
 
 .light-bg {
   margin: 0 auto;
+  padding: 0px 5%;
   width: 100%;
   background-color: #eee;
   color: rgb(17, 17, 17);
