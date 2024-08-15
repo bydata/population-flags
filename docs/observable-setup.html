@@ -1,0 +1,14 @@
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+  <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+  import define from "https://api.observablehq.com/@ansgar-wolsing/population-flags.js?v=4";
+  new Runtime().module(define, name => {
+    if (name === "map") return new Inspector(document.querySelector("#observablehq-map-59247c07"));
+            if (name === "africa") return new Inspector(document.querySelector("#observablehq-africa-7825ba79"));
+            if (name === "europe") return new Inspector(document.querySelector("#observablehq-europe-57b57266"));
+            if (name === "asia") return new Inspector(document.querySelector("#observablehq-asia-ad4a944d"));
+            if (name === "americas") return new Inspector(document.querySelector("#observablehq-americas-ddce2d77"));
+        });
+  </script>
+</head>

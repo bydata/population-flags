@@ -1,0 +1,96 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  font-size: 32pt;
+  text-align: center;
+  margin: 20px 0 10px;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  background: #333;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  width: 100%;
+}
+
+p {
+  line-height: 1.6;
+  text-align: justify;
+  margin: 10px 0;
+  padding: 0 10%;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.source-list {
+  text-align: left;
+  width: 70%;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.source-list ul {
+  padding-left: 20px;
+}
+
+.observable-map {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#observablehq-map-59247c07 {
+    width: 95%;
+    max-width: 1200px;
+}
+
+#observablehq-europe-57b57266, 
+#observablehq-asia-ad4a944d {
+    width: 90%;
+    max-width: 1000px;
+}
+
+#observablehq-africa-7825ba79 {
+    width: 90%;
+    max-width: 700px;
+    overflow: hidden;
+}
+
+#observablehq-americas-ddce2d77 {
+    width: 90%;
+    max-width: 600px;
+    overflow: hidden;
+}
