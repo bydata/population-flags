@@ -93,6 +93,9 @@
     color: white;
     padding: 5px;
     border-radius: 5px;
+    border-color: #aaa;
+    border-style: solid;
+    border-width: thin;
   }
   .cr-section.sidebar-left .sticky-col,
   .cr-section.sidebar-right .sticky-col,
