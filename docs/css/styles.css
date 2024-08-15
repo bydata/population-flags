@@ -82,24 +82,24 @@ p {
     max-width: 1600px;
 }
 
-#observablehq-europe-57b57266, 
-#observablehq-asia-ad4a944d {
-    width: 90%;
-    max-width: 1000px;
-}
-
-#observablehq-africa-7825ba79 {
-    width: 90%;
-    max-width: 700px;
-    overflow: hidden;
-}
-
-#observablehq-americas-ddce2d77 {
-    width: 90%;
-    max-width: 600px;
-    overflow: hidden;
+#cr-map-world-zoomable {
+  margin: 0 auto;
+  width: 85%;
+  border-color: #aaa;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 5px;
+  margin-top: -100px;
+  margin-bottom: 20px;
 }
 
 a {
   color: white;
+}
+
+.light-bg {
+  margin: 0 auto;
+  width: 100%;
+  background-color: #eee;
+  color: rgb(17, 17, 17);
 }

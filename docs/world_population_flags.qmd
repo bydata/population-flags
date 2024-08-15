@@ -43,15 +43,18 @@ The population dynamics in **<u>Europe</u>** contrast with other continents, as 
 [@cr-map-world]{pan-to="-90%,-70%" scale-by="1.8"}
 
 **Now explore the flags of the world by yourself.**<br><br>*Zoom in with your mouse to see countries with small populations. Hover over a flag to see the exact number of inhabitants.*
-@cr-map-world-zoomable
+[@cr-map-world]{pan-to="0%,0%" scale-by="0"}
 
-::: {#cr-map-world-zoomable}
+:::
+
+:::{#cr-map-world-zoomable}
 <div class="container">
   <div id="observablehq-map-59247c08" class="observable-map"></div>
 </div>
 :::
 
-:::
+
+:::{.light-bg}
 
 [Dorling cartogram](https://datavizcatalogue.com/blog/chart-snapshot-dorling-cartograms/)
 
@@ -66,3 +69,5 @@ Scrollytelling features supported by the [Closeread Quarto extension](https://cl
 -   Country geometries: GISCO, Natural Earth.
 -   Population: Worldbank (via {{gt}} R package)
 -   Flags: [HatScripts Circle Flags](https://github.com/HatScripts/circle-flags)
+
+:::
