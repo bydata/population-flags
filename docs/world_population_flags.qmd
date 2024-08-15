@@ -1,6 +1,6 @@
 ---
 title: "World Population Flags"
-format: html
+format: closeread-html
 theme: "none"
 css: styles.css
 include-in-header:
@@ -9,23 +9,32 @@ include-in-header:
 
 ------------------------------------------------------------------------
 
-What if we displayed the countries as circle-shaped flags and sized them proportionally by their population?
+:::{.cr-section layout="overlay-left"}
 
-*Zoom in with your mouse to see countries with small populations. Hover over a flag to see the exact number of inhabitants.*
+What if we displayed the countries as circle-shaped flags and sized them proportionally by their population? @cr-map-world
 
+*Zoom in with your mouse to see countries with small populations. Hover over a flag to see the exact number of inhabitants.* 
+
+:::{#cr-map-world}
 <div class="container">
   <div class = "observable-map" id="observablehq-map-59247c07"></div>
 </div> 
+:::
 
 Welcome to this visualisation of the world's population. In this [Dorling cartogram](https://datavizcatalogue.com/blog/chart-snapshot-dorling-cartograms/), each country is represented by its flag in the shape of a circle, with the size of the circle corresponding to the population of that country. This approach allows us to see relative population sizes in a visually intuitive way.
 
 Explore this map and the following maps to gain insight into how populations are distributed across different regions and how each country compares to others.
 
-# Asia
 
-------------------------------------------------------------------------
+:::{#asia}
 
-Asia is the continent with the most people in the world and has grown a lot since 2000. Asia's population has grown from 3.7 billion at the turn of the millennium to *4.7 billion* by 2021. *India and China*, the two countries with the largest population, together make up about one-third of the world's population. Despite a general decline in birth rates across many Asian countries, the sheer size of the population ensures continuous growth. Cities are getting bigger, the economy is getting better, and people are living longer, although some places are struggling with an ageing population.
+# Asia 
+
+Asia is the continent with the most people in the world and has grown a lot since 2000. Asia's population has grown from 3.7 billion at the turn of the millennium to *4.7 billion* by 2021. *India and China*, the two countries with the largest population, together make up about one-third of the world's population. Despite a general decline in birth rates across many Asian countries, the sheer size of the population ensures continuous growth. Cities are getting bigger, the economy is getting better, and people are living longer, although some places are struggling with an ageing population. 
+::: 
+
+
+:::
 
 
 # Africa
@@ -55,6 +64,15 @@ Europe's population dynamics contrast with other continents, as it has experienc
 ------------------------------------------------------------------------
 
 Oceania, including Australia, New Zealand, and the Pacific islands, has experienced moderate population growth since 2000. The population of the region has increased from around 31 million to about 44 million by 2021. This growth can be seen as a steady climb up a gentle hill, driven by Australia's immigration policies and economic opportunities, which act as a supportive push. New Zealand also sees steady increases, while many smaller Pacific island nations have varying growth rates due to differing economic conditions and emigration patterns. Oceania's demographic changes are influenced by both natural population growth and migration, shaping the region's diverse and dynamic population landscape.
+
+
+
+*Zoom in with your mouse to see countries with small populations. Hover over a flag to see the exact number of inhabitants.* 
+
+<div class="container">
+  <div class = "observable-map" id="observablehq-map-59247c08"></div>
+</div> 
+
 
 ## Sources
 
