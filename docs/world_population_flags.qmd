@@ -2,7 +2,10 @@
 title: "World Population Flags"
 format: closeread-html
 theme: "none"
-css: styles.css
+css:
+  - css/styles.css
+  - css/playfair-display.css
+  - css/roboto.css
 include-in-header:
   file: observable-setup.html
 ---
@@ -11,7 +14,7 @@ include-in-header:
 
 ::: {.cr-section layout="overlay-left"}
 
-What if we displayed the countries as circle-shaped flags and sized them proportionally by their population?<br><br>Welcome to this visualisation of the world's population. In this **Dorling cartogram**, each country is represented by its flag in the shape of a circle, with the size of the circle corresponding to the population of that country. This approach allows us to see relative population sizes in a visually intuitive way.<br><br>**Start scrolling** to explore the population flags of the world.
+What if we displayed the countries as circle-shaped flags and sized them proportionally by their population?<br><br>Welcome to this visualisation of the world's population. In this **Dorling cartogram**, each country is represented by its flag in the shape of a circle, with the size of the circle corresponding to the population of that country. This approach allows us to see relative population sizes in a visually intuitive way.<br><br>**Start scrolling** to explore the population flags of the world.<br><br>
 [@cr-map-world]
 
 ::: {#cr-map-world}
@@ -57,6 +60,10 @@ The population of the **<u>Americas</u>** has exhibited a consistent upward traj
 ## Sources
 
 The cartograms are based on the Observable notebook [Population Flags by Ansgar Wolsing](https://observablehq.com/@ansgar-wolsing/population-flags).
+
+Scrollytelling features supported by the [Closeread Quarto extension](https://closeread.netlify.app/).
+
+### Data sources
 
 -   Country geometries: GISCO, Natural Earth.
 -   Population: Worldbank (via {{gt}} R package)
