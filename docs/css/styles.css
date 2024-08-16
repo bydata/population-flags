@@ -21,6 +21,11 @@ h1 {
   margin: 3px 0 3px;
 }
 
+h2 {
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  font-size: 24pt;
+}
+
 h3 {
   font-weight: 600;
 }
@@ -55,17 +60,11 @@ p {
 .observable-map {
     text-align: center;
     margin: 0 auto;
-    /*padding: 5px;
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 3px;*/
-}
-
-#observablehq-map-59247c07 {
     width: 90%;
     height: 100%;
     max-width: 1600px;
 }
+
 
 #cr-map-world-zoomable {
   margin: -370px auto 20px auto;
@@ -141,4 +140,10 @@ a {
 
 .byline a:hover {
     text-decoration: underline; /* Add underline on hover */
+}
+
+
+.narrative-invisible {
+  background-color: red !important;
+  /*visibility: hidden;*/
 }
