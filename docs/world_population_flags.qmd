@@ -57,13 +57,11 @@ The population dynamics in **<u>Europe</u>** contrast with other continents, as 
 
 :::{.light-bg}
 
-[Dorling cartogram](https://datavizcatalogue.com/blog/chart-snapshot-dorling-cartograms/)
-
 ## Sources
 
-The cartograms are based on the Observable notebook [Population Flags by Ansgar Wolsing](https://observablehq.com/@ansgar-wolsing/population-flags).
-
-Scrollytelling features supported by the [Closeread Quarto extension](https://closeread.netlify.app/).
+- The initial version of the cartograms (world and separate cartograms for each continent) were created using R and ggplot2 during the #30DayChartChallenge in November 2023. The code and the maps can be found in the Github repository for the challenge: [https://github.com/bydata/30DayMapChallenge-2023](https://github.com/bydata/30DayMapChallenge-2023)
+- The cartograms are based on the Observable notebook [Population Flags by Ansgar Wolsing](https://observablehq.com/@ansgar-wolsing/population-flags).
+- Scrollytelling features supported by the [Closeread Quarto extension](https://closeread.netlify.app/).
 
 ### Data sources
 
