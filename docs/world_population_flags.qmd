@@ -2,7 +2,7 @@
 title: "World Population Flags"
 format: 
   closeread-html:
-    embed-resources: true
+    embed-resources: false
 theme: "none"
 css:
   - css/styles.css
