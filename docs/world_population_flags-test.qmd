@@ -86,10 +86,10 @@ The combined population of **North and South America** increased from 841 millio
 The continent has experienced relatively slow growth since 2000. The population in 2000 was about 726 million and has increased modestly to around **745 million** in 2021. Many European countries face low birth rates and aging populations, leading to demographic challenges such as labor shortages and increased healthcare demands. Some growth has been sustained through immigration. Despite these trends, Europe remains one of the least densely populated continents relative to its economic output and land area.
 [@cr-map-focus-europe]{pan-to="18.5%,70%" scale-by="2.8"}
 
-<span class="next-continent">**Oceania**, including Australia, New Zealand, and the Pacific islands, has experienced moderate population growth since 2000.</span>[@cr-map-focus-europe]{pan-to="-90%,-70%" scale-by="1.8"}
+<span class="next-continent">**Oceania**, including Australia, New Zealand, and the Pacific islands, has experienced a steady population growth since 2000.</span>[@cr-map-focus-europe]{pan-to="-55%,-70%" scale-by="1.8"}
 
-The population of the region has increased from around 31 million to about 44 million by 2021. This growth can be seen as a steady climb up a gentle hill, driven by Australia's immigration policies and economic opportunities, which act as a supportive push. New Zealand also sees steady increases, while many smaller Pacific island nations have varying growth rates due to differing economic conditions and emigration patterns. Oceania's demographic changes are influenced by both natural population growth and migration, shaping the region's diverse and dynamic population landscape.
-[@cr-map-focus-europe-and-oceania]{pan-to="-90%,-70%" scale-by="1.8"}
+The population of the region has **increased from around 31 million to about 44 million** by 2021, driven by Australia's immigration policies and expanding economic opportunities. Similarly, New Zealand has seen consistent increases, while growth rates among smaller Pacific island nations fluctuate due to varying economic conditions and emigration trends. Across Oceania, demographic changes are shaped by a combination of natural population growth and migration, contributing to the region's evolving and diverse population landscape.
+[@cr-map-focus-europe-and-oceania]{pan-to="-55%,-70%" scale-by="1.8"}
 
 **Now explore the flags of the world by yourself.**<br><br>Zoom in to discover the populations of smaller countries that might be less immediately visible, such as those in the Pacific Islands or the Caribbean. Hover over a flag to see the exact number of inhabitants.
 [@cr-map-focus-europe-and-oceania]{pan-to="0%,0%" scale-by="0"}

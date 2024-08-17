@@ -48,7 +48,7 @@ hr {
 
 p {
   line-height: 1.4;
-  text-align: justify;
+  text-align: left;
   margin: 10px 0;
   padding: 1.5% 4%;
 }
@@ -164,6 +164,7 @@ a {
 } 
 
 #cr-map-focus-europe-and-oceania {
-  transform: 0s scale(1.1);
+  transform: scale(1.1);
+  transition: transform 0s; /* this is the final map, set the transition to 0s*/ 
 }
  
