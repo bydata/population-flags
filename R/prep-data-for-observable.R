@@ -7,9 +7,6 @@ iso_to_flag <- function(iso_code) {
 
 # Function to map country names to flag emojis
 country_to_flag <- function(iso_code) {
-  # # Get the ISO 3166-1 alpha-2 code
-  # iso_code <- countrycode::countrycode(country_name, "country.name", "iso2c")
-  # Convert to flag emoji
   flag <- iso_to_flag(iso_code)
   return(flag)
 }
