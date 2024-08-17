@@ -4,10 +4,13 @@
     import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
   import define from "https://api.observablehq.com/@ansgar-wolsing/population-flags.js?v=4";
   new Runtime().module(define, name => {
-    if (name === "map") return new Inspector(document.querySelector("#observablehq-map-59247c07"));
-    if (name === "map_zoomable") return new Inspector(document.querySelector("#observablehq-map-59247c08"));
-    if (name === "map_focus_asia") return new Inspector(document.querySelector("#observablehq-map_focus_asia-1151804c"));
-    if (name === "map_focus_africa") return new Inspector(document.querySelector("#observablehq-map_focus_africa-1151804c"));
+    if (name === "map") return new Inspector(document.querySelector("#observablehq-map-world"));
+    if (name === "map_zoomable") return new Inspector(document.querySelector("#observablehq-map-world-zoomable"));
+    if (name === "map_focus_asia") return new Inspector(document.querySelector("#observablehq-map_focus_asia"));
+    if (name === "map_focus_africa") return new Inspector(document.querySelector("#observablehq-map_focus_africa"));
+    if (name === "map_focus_americas") return new Inspector(document.querySelector("#observablehq-map_focus_americas"));
+    if (name === "map_focus_europe") return new Inspector(document.querySelector("#observablehq-map_focus_europe"));
+    if (name === "map_focus_europe_and_oceania") return new Inspector(document.querySelector("#observablehq-map_focus_europe_and_oceania"));
   });
   </script>
 </head>

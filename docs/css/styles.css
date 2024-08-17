@@ -69,8 +69,6 @@ p {
 #cr-map-world-zoomable {
   margin: -20% auto 20px auto;
   width: 90%;
-  border-color: #aaa;
-  border-style: solid;
   border-width: thin;
   border-radius: 5px;
 }
@@ -142,8 +140,28 @@ a {
     text-decoration: underline; /* Add underline on hover */
 }
 
-
 .narrative-invisible {
   background-color: red !important;
   /*visibility: hidden;*/
 }
+
+.narrative-col p  span.next-continent {
+  font-size: 24pt;
+  text-align: left;
+  display: inline-block;
+}
+
+#cr-map-focus-africa {
+  transform-origin: 37.5% 83.8% ;
+  transform: scale(1.8);
+}
+ 
+#cr-map-focus-americas {
+  transform-origin: -363% 83% ;
+  transform: scale(1.1);
+} 
+
+#cr-map-focus-europe-and-oceania {
+  transform: 0s scale(1.1);
+}
+ 
