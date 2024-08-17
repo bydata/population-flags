@@ -1,5 +1,6 @@
 ---
 title: "World Population Flags"
+output-file: "index.html"
 format: 
   closeread-html:
     embed-resources: false
@@ -17,49 +18,88 @@ include-in-header:
 
 ::: {.cr-section layout="overlay-left"}
 
-What if we displayed the countries as circle-shaped flags and sized them proportionally by their population?<br><br>Welcome to this visualisation of the world's population. In this **Dorling cartogram**, each country is represented by its flag in the shape of a circle, with the size of the circle corresponding to the population of that country. This approach allows us to see relative population sizes in a visually intuitive way.<br><br>**Scroll to explore** the population flags of the world.<br><br>
-[@cr-map-world]
-
-In 2000, the world's population was approximately 6.1 billion. By 2021, it had grown to nearly **7.9 billion people**. This growth has been uneven across continents, driven by various factors including fertility rates, migration, and economic development.
-
 ::: {#cr-map-world}
 <div class="container">
-  <div id="observablehq-map-59247c07" class="observable-map"></div>
+  <div id="observablehq-map-world" class="observable-map"></div>
 </div>
 :::
 
+::: {#cr-map-focus-asia}
+<div class="container">
+  <div id="observablehq-map_focus_asia" class="observable-map"></div>
+</div>
+:::
+
+::: {#cr-map-focus-africa}
+<div class="container">
+  <div id="observablehq-map_focus_africa" class="observable-map"></div>
+</div>
+:::
+
+::: {#cr-map-focus-americas}
+<div class="container">
+  <div id="observablehq-map_focus_americas" class="observable-map"></div>
+</div>
+:::
+
+::: {#cr-map-focus-europe}
+<div class="container">
+  <div id="observablehq-map_focus_europe" class="observable-map"></div>
+</div>
+:::
+
+::: {#cr-map-focus-europe-and-oceania}
+<div class="container">
+  <div id="observablehq-map_focus_europe_and_oceania" class="observable-map"></div>
+</div>
+:::
+
+
+<span class="next-continent">What if we displayed the countries as circle-shaped flags and sized them proportionally by their population?</span><br><br>Welcome to this visualisation of the world's population. In this **Dorling cartogram**, each country is represented by its flag in the shape of a circle, with the size of the circle corresponding to the population of that country. This approach allows us to see relative population sizes in a visually intuitive way.<br><br>**Scroll to explore** the population flags of the world.<br><br>
+[@cr-map-world]
+
 Explore this map by scrolling to gain insight into how populations are distributed across different regions and how each country compares to others. At the end of the page, you have the chance to explore the map yourself in more detail.
+[@cr-map-world]
 
+<span class="next-continent">In 2000, there were an estimated 6.1 billion people on the planet. By 2021, that number had climbed to nearly 7.9 billion.</span><br><br>This growth has been uneven across continents, driven by various factors including fertility rates, migration, and economic development.
 
-**<u>Asia</u>** is the continent with the most people in the world and has grown a lot since 2000. Asia's population has grown from 3.7 billion at the turn of the millennium to **4.7 billion** by 2021, largely driven by growth in countries like India, Pakistan, and Indonesia.
-[@cr-map-world]{pan-to="-25%,8%" scale-by="1.6"}
+<span class="next-continent">**Asia** is the continent with the most people in the world.</span><br><br>Asia has grown a lot since 2000. Asia's population has grown from 3.7 billion at the turn of the millennium to **4.7 billion** by 2021, largely driven by growth in countries like India, Pakistan, and Indonesia.
+[@cr-map-focus-asia]
 
-**India and China**, the two countries with the largest population, together make up about one-third of the world's population. While China’s growth rate has slowed significantly due to its aging population and policies like the former one-child policy, India’s population continues to grow rapidly and has surpassed China's.
-[@cr-map-world]{pan-to="-30%,25%" scale-by="2.2"}
+<span class="next-continent">**India and China**, the two countries with the largest population, together make up about one-third of the world's population.</span><br><br>While China’s growth rate has slowed significantly due to its aging population and policies like the former one-child policy, India’s population continues to grow rapidly and has surpassed China's.
+[@cr-map-focus-asia]{pan-to="-30%,25%" scale-by="2.2"}
 
 The demographic story of Asia is evolving. While India's population continues to rise rapidly, countries like Japan and South Korea face declining birth rates, prompting concerns about economic sustainability. Despite these challenges, the continent remains dynamic, with expanding cities, a growing middle class, and increasing life expectancy.
-[@cr-map-world]{pan-to="-28%,8%" scale-by="1.6"}
+[@cr-map-focus-asia]{pan-to="-28%,8%" scale-by="1.6"}
 
-**<u>Africa</u>**'s population has seen dramatic growth since 2000. In 2000, the continent had approximately 814 million inhabitants. By 2021, this number surged to around **1.4 billion**, making Africa the second most populous continent. This rapid increase is primarily due to high birth rates and improvements in healthcare that have reduced mortality rates. The population growth rate in Africa remains the highest among all continents, driven by a youthful demographic and large families. Projections suggest that **by 2050, Africa's population could double.**
-[@cr-map-world]{pan-to="10%,-27%" scale-by="1.8"}
+<span class="next-continent">**Africa**'s population has seen dramatic growth since 2000.</span> [@cr-map-focus-asia]{pan-to="10%,-27%" scale-by="1.8"}
 
-The population of the **<u>Americas</u>** has exhibited a consistent upward trajectory since 2000. The combined population of North and South America increased from approximately 841 million in 2000 to approximately **1.04 billion** by 2021. The United States, Mexico, and Brazil are the main contributors to this growth, driven by relatively high birth rates and substantial immigration. Canada also experiences growth, albeit at a slower rate. Urbanisation is a significant trend, with many people moving to cities in search of better opportunities, leading to the expansion of urban areas and associated socio-economic challenges. Overall, the Americas display diverse demographic trends, with increasing urban populations and growing diversity shaping the region's social and economic landscapes.
-[@cr-map-world]{pan-to="40%,-10%" scale-by="1.1"}
+In 2000, the continent had approximately 814 million inhabitants. By 2021, this number surged to around **1.4 billion**, making Africa the second most populous continent. This rapid increase is primarily due to high birth rates and improvements in healthcare that have reduced mortality rates. The population growth rate in Africa remains the highest among all continents, driven by a youthful demographic and large families.<br><br><span class="next-continent">Projections suggest that by 2050, Africa's population could double.</span>
+[@cr-map-focus-africa]
 
-The population dynamics in **<u>Europe</u>** contrast with other continents, as it has experienced relatively slow growth since 2000. The population in 2000 was about 726 million and has increased modestly to around **745 million** in 2021. Many European countries face low birth rates and aging populations, leading to demographic challenges such as labor shortages and increased healthcare demands. Some growth has been sustained through immigration. Despite these trends, Europe remains one of the least densely populated continents relative to its economic output and land area.
-[@cr-map-world]{pan-to="19%,100%" scale-by="3.6"}
+<span class="next-continent">The population of the **Americas** has exhibited a consistent upward trajectory since 2000.</span> [@cr-map-focus-africa]{pan-to="40%,0%" scale-by="1.1"}
 
-**<u>Oceania</u>**, including Australia, New Zealand, and the Pacific islands, has experienced moderate population growth since 2000. The population of the region has increased from around 31 million to about 44 million by 2021. This growth can be seen as a steady climb up a gentle hill, driven by Australia's immigration policies and economic opportunities, which act as a supportive push. New Zealand also sees steady increases, while many smaller Pacific island nations have varying growth rates due to differing economic conditions and emigration patterns. Oceania's demographic changes are influenced by both natural population growth and migration, shaping the region's diverse and dynamic population landscape.
-[@cr-map-world]{pan-to="-90%,-70%" scale-by="1.8"}
+The combined population of **North and South America** increased from 841 million in 2000 to **1.04 billion** by 2021. The United States, Mexico, and Brazil are the main contributors to this growth, driven by relatively high birth rates and substantial immigration. Canada also experiences growth, albeit at a slower rate. Urbanisation is a significant trend, with many people moving to cities in search of better opportunities, leading to the expansion of urban areas and associated socio-economic challenges. Overall, the Americas display diverse demographic trends, with increasing urban populations and growing diversity shaping the region's social and economic landscapes.
+[@cr-map-focus-americas]
 
-**Now explore the flags of the world by yourself.**<br><br>Zoom in to discover the populations of smaller countries that might be less immediately visible, such as those in the Pacific Islands or the Caribbean. Hover over a flag to see the exact number of inhabitants.
-[@cr-map-world]{pan-to="0%,0%" scale-by="0"}
+<span class="next-continent">Meanwhile, the population dynamics in **Europe** are different to the other continents.</span> [@cr-map-focus-europe]{pan-to="10%,0%" scale-by="0.8"}
+
+The continent has experienced relatively slow growth since 2000. The population in 2000 was about 726 million and has increased modestly to around **745 million** in 2021. Many European countries face low birth rates and aging populations, leading to demographic challenges such as labor shortages and increased healthcare demands. Some growth has been sustained through immigration. Despite these trends, Europe remains one of the least densely populated continents relative to its economic output and land area.
+[@cr-map-focus-europe]{pan-to="18.5%,70%" scale-by="2.8"}
+
+<span class="next-continent">**Oceania**, including Australia, New Zealand, and the Pacific islands, has experienced a steady population growth since 2000.</span>[@cr-map-focus-europe]{pan-to="-55%,-70%" scale-by="1.8"}
+
+The population of the region has **increased from around 31 million to about 44 million** by 2021, driven by Australia's immigration policies and expanding economic opportunities. Similarly, New Zealand has seen consistent increases, while growth rates among smaller Pacific island nations fluctuate due to varying economic conditions and emigration trends. Across Oceania, demographic changes are shaped by a combination of natural population growth and migration, contributing to the region's evolving and diverse population landscape.
+[@cr-map-focus-europe-and-oceania]{pan-to="-55%,-70%" scale-by="1.8"}
+
+<span class="next-continent">Now explore the flags of the world by yourself.</span><br><br>Zoom in to discover the populations of smaller countries that might be less immediately visible, such as those in the Pacific Islands or the Caribbean. Hover over a flag to see the exact number of inhabitants.
+[@cr-map-focus-europe-and-oceania]{pan-to="0%,0%" scale-by="0"}
 
 :::
 
 :::{#cr-map-world-zoomable}
 <div class="container">
-  <div id="observablehq-map-59247c08" class="observable-map"></div>
+  <div id="observablehq-map-world-zoomable" class="observable-map"></div>
 </div>
 :::
 
@@ -68,11 +108,13 @@ The population dynamics in **<u>Europe</u>** contrast with other continents, as 
 
 ## Sources
 
+### Acknowledgements & previous work
+
 - The initial version of the cartograms (world and separate cartograms for each continent) were created using R and ggplot2 during the #30DayChartChallenge in November 2023. The code and the maps can be found in the Github repository for the challenge: [https://github.com/bydata/30DayMapChallenge-2023](https://github.com/bydata/30DayMapChallenge-2023)
 - The cartograms are based on the Observable notebook [Population Flags by Ansgar Wolsing](https://observablehq.com/@ansgar-wolsing/population-flags).
 - Scrollytelling features supported by the [Closeread Quarto extension](https://closeread.netlify.app/).
 
-### Data sources
+### Data 
 
 -   Country geometries: GISCO, Natural Earth.
 -   Population: Worldbank, 2021 (via [{{gt}} R package](https://gt.rstudio.com/))
