@@ -69,6 +69,8 @@ p {
 #cr-map-world-zoomable {
   margin: -20% auto 20px auto;
   width: 90%;
+  border-color: #aaa;
+  border-style: solid;
   border-width: thin;
   border-radius: 5px;
 }
