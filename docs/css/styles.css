@@ -24,10 +24,12 @@ h1 {
 h2 {
   font-family: 'Playfair Display', 'Times New Roman', serif;
   font-size: 24pt;
+  font-weight: 500;
 }
 
 h3 {
-  font-weight: 600;
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  font-weight: 500;
 }
 
 hr {
@@ -147,10 +149,18 @@ a {
   /*visibility: hidden;*/
 }
 
-.narrative-col p  span.next-continent {
+.narrative-col p {
+  font-weight: 100;
+}
+
+.narrative-col p span.next-continent {
   font-size: 24pt;
   text-align: left;
   display: inline-block;
+}
+
+.narrative-col p span.next-continent strong {
+  font-weight: 500;
 }
 
 #cr-map-focus-africa {

@@ -91,7 +91,7 @@ The continent has experienced relatively slow growth since 2000. The population 
 The population of the region has **increased from around 31 million to about 44 million** by 2021, driven by Australia's immigration policies and expanding economic opportunities. Similarly, New Zealand has seen consistent increases, while growth rates among smaller Pacific island nations fluctuate due to varying economic conditions and emigration trends. Across Oceania, demographic changes are shaped by a combination of natural population growth and migration, contributing to the region's evolving and diverse population landscape.
 [@cr-map-focus-europe-and-oceania]{pan-to="-55%,-70%" scale-by="1.8"}
 
-**Now explore the flags of the world by yourself.**<br><br>Zoom in to discover the populations of smaller countries that might be less immediately visible, such as those in the Pacific Islands or the Caribbean. Hover over a flag to see the exact number of inhabitants.
+<span class="next-continent">Now explore the flags of the world by yourself.</span><br><br>Zoom in to discover the populations of smaller countries that might be less immediately visible, such as those in the Pacific Islands or the Caribbean. Hover over a flag to see the exact number of inhabitants.
 [@cr-map-focus-europe-and-oceania]{pan-to="0%,0%" scale-by="0"}
 
 :::
@@ -107,11 +107,13 @@ The population of the region has **increased from around 31 million to about 44 
 
 ## Sources
 
+### Acknowledgements & previous work
+
 - The initial version of the cartograms (world and separate cartograms for each continent) were created using R and ggplot2 during the #30DayChartChallenge in November 2023. The code and the maps can be found in the Github repository for the challenge: [https://github.com/bydata/30DayMapChallenge-2023](https://github.com/bydata/30DayMapChallenge-2023)
 - The cartograms are based on the Observable notebook [Population Flags by Ansgar Wolsing](https://observablehq.com/@ansgar-wolsing/population-flags).
 - Scrollytelling features supported by the [Closeread Quarto extension](https://closeread.netlify.app/).
 
-### Data sources
+### Data 
 
 -   Country geometries: GISCO, Natural Earth.
 -   Population: Worldbank, 2021 (via [{{gt}} R package](https://gt.rstudio.com/))
