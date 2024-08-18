@@ -167,7 +167,7 @@ a {
   transform-origin: 37.5% 83.8% ;
   transform: scale(1.8);
 }
- 
+
 #cr-map-focus-americas {
   transform-origin: -363% 83% ;
   transform: scale(1.1);
@@ -178,3 +178,19 @@ a {
   transition: transform 0s; /* this is the final map, set the transition to 0s*/ 
 }
  
+/* support the transition to Africa */
+.cr-section .narrative-col > .trigger:nth-child(7) {
+  padding-block-end: 0svh;
+} 
+.cr-section .narrative-col > .trigger:nth-child(8) {
+  padding-block-start: 5svh;
+} 
+
+/* support the transition to the Americas */
+.cr-section .narrative-col > .trigger:nth-child(9) {
+  padding-block-end: 0svh;
+}
+.cr-section .narrative-col > .trigger:nth-child(10) {
+  padding-block-start: 5svh;
+} 
+
