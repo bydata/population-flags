@@ -72,7 +72,7 @@ Explore this map by scrolling to gain insight into how populations are distribut
 The demographic story of Asia is evolving. While India's population continues to rise rapidly, countries like Japan and South Korea face declining birth rates, prompting concerns about economic sustainability. Despite these challenges, the continent remains dynamic, with expanding cities, a growing middle class, and increasing life expectancy.
 [@cr-map-focus-asia]{pan-to="-28%,8%" scale-by="1.6"}
 
-<span class="next-continent">**Africa**'s population has seen dramatic growth since 2000.</span> [@cr-map-focus-asia]{pan-to="10%,-27%" scale-by="1.8"}
+<span class="next-continent">**Africa**'s population has grown rapidly since 2000.</span> [@cr-map-focus-asia]{pan-to="10%,-27%" scale-by="1.8"}
 
 In 2000, the continent had approximately 814 million inhabitants. By 2021, this number surged to around **1.4 billion**, making Africa the second most populous continent. This rapid increase is primarily due to high birth rates and improvements in healthcare that have reduced mortality rates. The population growth rate in Africa remains the highest among all continents, driven by a youthful demographic and large families.<br><br><span class="next-continent">Projections suggest that by 2050, Africa's population could double.</span>
 [@cr-map-focus-africa]
